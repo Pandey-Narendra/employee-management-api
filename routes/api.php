@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Controllers
+// use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\AuthController;
 
 /*
@@ -18,6 +19,23 @@ use App\Http\Controllers\Api\AuthController;
 */
 
 // Public Routes
+
+Route::get('auth/test', function() {
+    return response()->json([
+        'status' => true,
+        'message' => 'Logged out successfully.',
+    ], 200);
+});
+
+// Route::post('auth/register', function() {
+//     return response()->json([
+//         'status' => true,
+//         'message' => 'Logged out successfully.',
+//     ], 200);
+// });
+
+// Route::post('auth/register', [AuthController::class, 'register'])->name('auth.register');
+
 Route::prefix('auth')->group(function () {
     Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
     Route::post('/login', [AuthController::class, 'login'])->name('auth.login');

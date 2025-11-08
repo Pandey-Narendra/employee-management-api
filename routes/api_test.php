@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/test', function() {
@@ -8,7 +9,6 @@ Route::get('/test', function() {
         'message' => 'Logged out successfully.',
     ], 200);
 });
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');

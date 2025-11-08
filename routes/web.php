@@ -2,13 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function() {
+Route::get('/', function() {
     return response()->json([
         'status' => true,
-        'message' => 'Logged out successfully.',
+        'message' => 'API is working.',
     ], 200);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });

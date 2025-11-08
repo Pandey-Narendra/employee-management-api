@@ -123,4 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'id_encryption_salt' => env('ID_ENCRYPTION_SALT', ''),
+
 ];

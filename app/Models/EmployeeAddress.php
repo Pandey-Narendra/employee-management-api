@@ -5,13 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EmployeeContact extends Model
+class EmployeeAddress extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'employee_id',
-        'contact_number'
+        'address_line',
+        'city',
+        'state',
+        'pincode'
     ];
 
     public function employee()

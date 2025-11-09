@@ -5,6 +5,27 @@ namespace App\Services;
 use Illuminate\Support\Facades\Crypt;
 use InvalidArgumentException;
 
+// use Hashids\Hashids;
+// class IdEncrypter
+// {
+//     protected Hashids $hashids;
+
+//     public function __construct()
+//     {
+//         $this->hashids = new Hashids(env('HASHIDS_SALT'), 8);
+//     }
+
+//     public function encrypt(int $id): string
+//     {
+//         return $this->hashids->encode($id);
+//     }
+
+//     public function decrypt(string $hash): ?int
+//     {
+//         return $this->hashids->decode($hash)[0] ?? null;
+//     }
+// }
+
 class IdEncrypter
 {
     protected string $salt;

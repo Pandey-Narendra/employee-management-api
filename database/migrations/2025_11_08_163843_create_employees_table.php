@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
 
-            $table->string('first_name', 100);
-            $table->string('last_name', 100);
-            $table->string('email', 150)->unique();
+            $table->string('first_name', 100)->index();
+            $table->string('last_name', 100)->index();
+            $table->string('email', 150)->unique()->index();
             
             // department In which this employee belongs
             $table->foreignId('department_id')
@@ -46,6 +46,14 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('employees', function (Blueprint $table) {
+            $table->dropForeign(['department_id']);
+            $table->dropForeign(['user_id']);
+            $table->dropIndex(['first_name']);
+            $table->dropIndex(['last_name']);
+            $table->dropUnique(['email']);
+        });
+        
         Schema::dropIfExists('employees');
     }
 };

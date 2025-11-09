@@ -26,6 +26,9 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('departments', function (Blueprint $table) {
+            $table->dropUnique(['name']); 
+        });
         Schema::dropIfExists('departments');
     }
 };

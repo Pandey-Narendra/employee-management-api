@@ -21,7 +21,7 @@ return new class extends Migration
             ; 
 
             // Store as string to preserve leading zeros and symbols like '+91'
-            $table->string('contact_number', 15)
+            $table->string('contact_number', 15)->index()
                 ->comment('Employee contact number including country code if applicable')
             ;
             
@@ -34,6 +34,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('employee_contacts', function (Blueprint $table) {
+            $table->dropForeign(['employee_id']);
+            $table->dropIndex(['contact_number']);
+        });
         Schema::dropIfExists('employee_contacts');
     }
 };

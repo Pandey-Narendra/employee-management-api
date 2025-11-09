@@ -236,6 +236,255 @@
 			"response": []
 		},
 		{
+			"name": "Post Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Alice4555\",\r\n  \"last_name\": \"Smith\",\r\n  \"email\": \"alice.smit555445h@example001.com\",\r\n  \"department_id\":\"ZXlKcGRpSTZJbUkyTjFoUFFWaEpXWFZFT0Rkek5FdFRXQ3MxYzJjOVBTSXNJblpoYkhWbElqb2ljblkyYVU1ME9HUkhlbU40Vld0bGVtNVBSVzlaUkZCRUszWjRaV1JLZG5GcmNYRlphbmsxZENzeGR6MGlMQ0p0WVdNaU9pSTNNVE5tTVRkak56azRabVU0T0dKaU1Ua3lNV1V3WVRFNE5EWmhPRFF4WW1FMVpqQmpOVFU0WkdSbE5EQmxZVGhoWTJZM1l6bGpZemhsWW1ObU5qUTJJaXdpZEdGbklqb2lJbjA9\",\r\n  \"contacts\": [\"9876543210\", \"9123456780\"],\r\n  \"addresses\": [\r\n    {\r\n      \"address_line\": \"123 Main Street\",\r\n      \"city\": \"Delhi\",\r\n      \"state\": \"Delhi\",\r\n      \"pincode\": \"110001\"\r\n    },\r\n    {\r\n      \"address_line\": \"456 Second Street\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"Maharashtra\",\r\n      \"pincode\": \"400001\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/employees",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Alice1\",\r\n  \"last_name\": \"Smith\",\r\n  \"email\": \"alice.smith1@example001.com\",\r\n  \"department_id\":\"ZXlKcGRpSTZJbUkyTjFoUFFWaEpXWFZFT0Rkek5FdFRXQ3MxYzJjOVBTSXNJblpoYkhWbElqb2ljblkyYVU1ME9HUkhlbU40Vld0bGVtNVBSVzlaUkZCRUszWjRaV1JLZG5GcmNYRlphbmsxZENzeGR6MGlMQ0p0WVdNaU9pSTNNVE5tTVRkak56azRabVU0T0dKaU1Ua3lNV1V3WVRFNE5EWmhPRFF4WW1FMVpqQmpOVFU0WkdSbE5EQmxZVGhoWTJZM1l6bGpZemhsWW1ObU5qUTJJaXdpZEdGbklqb2lJbjA9\",\r\n  \"contacts\": [\"9876543211\", \"9123456780\"],\r\n  \"addresses\": [\r\n    {\r\n      \"address_line\": \"123 Main Streettt\",\r\n      \"city\": \"Delhi\",\r\n      \"state\": \"Delhi\",\r\n      \"pincode\": \"110001\"\r\n    },\r\n    {\r\n      \"address_line\": \"456 Second Street\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"Maharashtra\",\r\n      \"pincode\": \"400001\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/employees/ZXlKcGRpSTZJbVk1UXlzNWMyUXlWVGxxVmtkM1dXTmtUVzlzV21jOVBTSXNJblpoYkhWbElqb2lTak5ZVkROS09GcE1hSFpIYkc1dU1sVTNkekUyV2tOa1oyZGtNWHBMVjNsR1pFTXlkVkI1VGpSRmJ6MGlMQ0p0WVdNaU9pSmlOVGhrWmpVeFl6UTNZbU00Tm1SaU5ETmpOR0l6T0RKak5UUmlPR1ZtTkdabU5UWm1ORGhoWTJGaU9UVXlPR1l3TURZMU5qVXpOMll5T1dFd01qZ3lJaXdpZEdGbklqb2lJbjA9",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees",
+						"ZXlKcGRpSTZJbVk1UXlzNWMyUXlWVGxxVmtkM1dXTmtUVzlzV21jOVBTSXNJblpoYkhWbElqb2lTak5ZVkROS09GcE1hSFpIYkc1dU1sVTNkekUyV2tOa1oyZGtNWHBMVjNsR1pFTXlkVkI1VGpSRmJ6MGlMQ0p0WVdNaU9pSmlOVGhrWmpVeFl6UTNZbU00Tm1SaU5ETmpOR0l6T0RKak5UUmlPR1ZtTkdabU5UWm1ORGhoWTJGaU9UVXlPR1l3TURZMU5qVXpOMll5T1dFd01qZ3lJaXdpZEdGbklqb2lJbjA9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Alice\",\r\n  \"last_name\": \"Smith\",\r\n  \"email\": \"alice.smith@example001.com\",\r\n  \"department_id\":\"ZXlKcGRpSTZJbUkyTjFoUFFWaEpXWFZFT0Rkek5FdFRXQ3MxYzJjOVBTSXNJblpoYkhWbElqb2ljblkyYVU1ME9HUkhlbU40Vld0bGVtNVBSVzlaUkZCRUszWjRaV1JLZG5GcmNYRlphbmsxZENzeGR6MGlMQ0p0WVdNaU9pSTNNVE5tTVRkak56azRabVU0T0dKaU1Ua3lNV1V3WVRFNE5EWmhPRFF4WW1FMVpqQmpOVFU0WkdSbE5EQmxZVGhoWTJZM1l6bGpZemhsWW1ObU5qUTJJaXdpZEdGbklqb2lJbjA9\",\r\n  \"contacts\": [\"9876543210\", \"9123456780\"],\r\n  \"addresses\": [\r\n    {\r\n      \"address_line\": \"123 Main Street\",\r\n      \"city\": \"Delhi\",\r\n      \"state\": \"Delhi\",\r\n      \"pincode\": \"110001\"\r\n    },\r\n    {\r\n      \"address_line\": \"456 Second Street\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"Maharashtra\",\r\n      \"pincode\": \"400001\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/employees/ZXlKcGRpSTZJbVk1UXlzNWMyUXlWVGxxVmtkM1dXTmtUVzlzV21jOVBTSXNJblpoYkhWbElqb2lTak5ZVkROS09GcE1hSFpIYkc1dU1sVTNkekUyV2tOa1oyZGtNWHBMVjNsR1pFTXlkVkI1VGpSRmJ6MGlMQ0p0WVdNaU9pSmlOVGhrWmpVeFl6UTNZbU00Tm1SaU5ETmpOR0l6T0RKak5UUmlPR1ZtTkdabU5UWm1ORGhoWTJGaU9UVXlPR1l3TURZMU5qVXpOMll5T1dFd01qZ3lJaXdpZEdGbklqb2lJbjA9",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees",
+						"ZXlKcGRpSTZJbVk1UXlzNWMyUXlWVGxxVmtkM1dXTmtUVzlzV21jOVBTSXNJblpoYkhWbElqb2lTak5ZVkROS09GcE1hSFpIYkc1dU1sVTNkekUyV2tOa1oyZGtNWHBMVjNsR1pFTXlkVkI1VGpSRmJ6MGlMQ0p0WVdNaU9pSmlOVGhrWmpVeFl6UTNZbU00Tm1SaU5ETmpOR0l6T0RKak5UUmlPR1ZtTkdabU5UWm1ORGhoWTJGaU9UVXlPR1l3TURZMU5qVXpOMll5T1dFd01qZ3lJaXdpZEdGbklqb2lJbjA9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Alice\",\r\n  \"last_name\": \"Smith\",\r\n  \"email\": \"alice.smith@example001.com\",\r\n  \"department_id\":\"ZXlKcGRpSTZJbUkyTjFoUFFWaEpXWFZFT0Rkek5FdFRXQ3MxYzJjOVBTSXNJblpoYkhWbElqb2ljblkyYVU1ME9HUkhlbU40Vld0bGVtNVBSVzlaUkZCRUszWjRaV1JLZG5GcmNYRlphbmsxZENzeGR6MGlMQ0p0WVdNaU9pSTNNVE5tTVRkak56azRabVU0T0dKaU1Ua3lNV1V3WVRFNE5EWmhPRFF4WW1FMVpqQmpOVFU0WkdSbE5EQmxZVGhoWTJZM1l6bGpZemhsWW1ObU5qUTJJaXdpZEdGbklqb2lJbjA9\",\r\n  \"contacts\": [\"9876543210\", \"9123456780\"],\r\n  \"addresses\": [\r\n    {\r\n      \"address_line\": \"123 Main Street\",\r\n      \"city\": \"Delhi\",\r\n      \"state\": \"Delhi\",\r\n      \"pincode\": \"110001\"\r\n    },\r\n    {\r\n      \"address_line\": \"456 Second Street\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"Maharashtra\",\r\n      \"pincode\": \"400001\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/employees/ZXlKcGRpSTZJakJyV0hvM1dUbHZRemxLVGpacVRERk1WbWRxYzBFOVBTSXNJblpoYkhWbElqb2laalIwYmpGeFRIVm9SM2szYkdFMmRHTXdNMmg2UW1aaFdXTlRablJpUnpobE1rbDFkekp2YmtwNmR6MGlMQ0p0WVdNaU9pSXdPV1psTWpkaU56RXlZbUV6TURKbU1HTmpabU0xT0dGbE4yRXpObVE1TVdJMFpXWTBORGxpWWpaaU1Ua3dZbUZrWWpKa09UbGpPVGRqTVdRMFkyUTVJaXdpZEdGbklqb2lJbjA9",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees",
+						"ZXlKcGRpSTZJakJyV0hvM1dUbHZRemxLVGpacVRERk1WbWRxYzBFOVBTSXNJblpoYkhWbElqb2laalIwYmpGeFRIVm9SM2szYkdFMmRHTXdNMmg2UW1aaFdXTlRablJpUnpobE1rbDFkekp2YmtwNmR6MGlMQ0p0WVdNaU9pSXdPV1psTWpkaU56RXlZbUV6TURKbU1HTmpabU0xT0dGbE4yRXpObVE1TVdJMFpXWTBORGxpWWpaaU1Ua3dZbUZrWWpKa09UbGpPVGRqTVdRMFkyUTVJaXdpZEdGbklqb2lJbjA9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Alice\",\r\n  \"last_name\": \"Smith\",\r\n  \"email\": \"alice.smith@example001.com\",\r\n  \"department_id\":\"ZXlKcGRpSTZJbUkyTjFoUFFWaEpXWFZFT0Rkek5FdFRXQ3MxYzJjOVBTSXNJblpoYkhWbElqb2ljblkyYVU1ME9HUkhlbU40Vld0bGVtNVBSVzlaUkZCRUszWjRaV1JLZG5GcmNYRlphbmsxZENzeGR6MGlMQ0p0WVdNaU9pSTNNVE5tTVRkak56azRabVU0T0dKaU1Ua3lNV1V3WVRFNE5EWmhPRFF4WW1FMVpqQmpOVFU0WkdSbE5EQmxZVGhoWTJZM1l6bGpZemhsWW1ObU5qUTJJaXdpZEdGbklqb2lJbjA9\",\r\n  \"contacts\": [\"9876543210\", \"9123456780\"],\r\n  \"addresses\": [\r\n    {\r\n      \"address_line\": \"123 Main Street\",\r\n      \"city\": \"Delhi\",\r\n      \"state\": \"Delhi\",\r\n      \"pincode\": \"110001\"\r\n    },\r\n    {\r\n      \"address_line\": \"456 Second Street\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"Maharashtra\",\r\n      \"pincode\": \"400001\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/employees?page=1&per_page=2",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Single Department",
 			"request": {
 				"method": "GET",
@@ -256,6 +505,114 @@
 						"type": "text"
 					}
 				],
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/departments/ZXlKcGRpSTZJbFpNTlRZd1VYQk1NME42TTJoWU0wMTVRa1p2UVdjOVBTSXNJblpoYkhWbElqb2ljRkoxTURacFZIaDBLM2QwVld4SlJIRkNZMXBWU0RCWlFqZzNWMk40TTA1U1dUSldZbE4xU1ZGV1VUMGlMQ0p0WVdNaU9pSTVNVFE1T1dObE1qTXhOREUwWlRSaFpqTm1NelZoTURSaU1XWTFPR1JrWkRrMk5XRmtaREExT0dNNE5tUTVPVFl6TlRZelpUVXpZMlUxTWpGa00yVXhJaXdpZEdGbklqb2lJbjA9",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"departments",
+						"ZXlKcGRpSTZJbFpNTlRZd1VYQk1NME42TTJoWU0wMTVRa1p2UVdjOVBTSXNJblpoYkhWbElqb2ljRkoxTURacFZIaDBLM2QwVld4SlJIRkNZMXBWU0RCWlFqZzNWMk40TTA1U1dUSldZbE4xU1ZGV1VUMGlMQ0p0WVdNaU9pSTVNVFE1T1dObE1qTXhOREUwWlRSaFpqTm1NelZoTURSaU1XWTFPR1JrWkRrMk5XRmtaREExT0dNNE5tUTVPVFl6TlRZelpUVXpZMlUxTWpGa00yVXhJaXdpZEdGbklqb2lJbjA9"
+					],
+					"query": [
+						{
+							"key": "Accept",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Department",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Finance & Accounting\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/departments/ZXlKcGRpSTZJbFpNTlRZd1VYQk1NME42TTJoWU0wMTVRa1p2UVdjOVBTSXNJblpoYkhWbElqb2ljRkoxTURacFZIaDBLM2QwVld4SlJIRkNZMXBWU0RCWlFqZzNWMk40TTA1U1dUSldZbE4xU1ZGV1VUMGlMQ0p0WVdNaU9pSTVNVFE1T1dObE1qTXhOREUwWlRSaFpqTm1NelZoTURSaU1XWTFPR1JrWkRrMk5XRmtaREExT0dNNE5tUTVPVFl6TlRZelpUVXpZMlUxTWpGa00yVXhJaXdpZEdGbklqb2lJbjA9",
+					"protocol": "https",
+					"host": [
+						"cayson-semiarid-harlee",
+						"ngrok-free",
+						"dev"
+					],
+					"path": [
+						"api",
+						"departments",
+						"ZXlKcGRpSTZJbFpNTlRZd1VYQk1NME42TTJoWU0wMTVRa1p2UVdjOVBTSXNJblpoYkhWbElqb2ljRkoxTURacFZIaDBLM2QwVld4SlJIRkNZMXBWU0RCWlFqZzNWMk40TTA1U1dUSldZbE4xU1ZGV1VUMGlMQ0p0WVdNaU9pSTVNVFE1T1dObE1qTXhOREUwWlRSaFpqTm1NelZoTURSaU1XWTFPR1JrWkRrMk5XRmtaREExT0dNNE5tUTVPVFl6TlRZelpUVXpZMlUxTWpGa00yVXhJaXdpZEdGbklqb2lJbjA9"
+					],
+					"query": [
+						{
+							"key": "Accept",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Department",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|GqdEVm5qhMVYMudlVp5h2sx9ywzALOY3GPlRnKbx5c1cfd63",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Finance & Accounting\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://cayson-semiarid-harlee.ngrok-free.dev/api/departments/ZXlKcGRpSTZJbFpNTlRZd1VYQk1NME42TTJoWU0wMTVRa1p2UVdjOVBTSXNJblpoYkhWbElqb2ljRkoxTURacFZIaDBLM2QwVld4SlJIRkNZMXBWU0RCWlFqZzNWMk40TTA1U1dUSldZbE4xU1ZGV1VUMGlMQ0p0WVdNaU9pSTVNVFE1T1dObE1qTXhOREUwWlRSaFpqTm1NelZoTURSaU1XWTFPR1JrWkRrMk5XRmtaREExT0dNNE5tUTVPVFl6TlRZelpUVXpZMlUxTWpGa00yVXhJaXdpZEdGbklqb2lJbjA9",
 					"protocol": "https",

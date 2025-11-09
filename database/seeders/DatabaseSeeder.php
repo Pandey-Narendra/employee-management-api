@@ -2,12 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 // Seeders
-// use database\seeders\DepartmentSeeder.php
+use Database\Seeders\DepartmentSeeder;
+use Database\Seeders\EmployeeSeeder;
+
+// Model
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,15 +23,32 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        DB::beginTransaction();
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        try {
+            // Create a dummy user
+            $dummyUser = User::firstOrCreate(
+                ['email' => 'test@gmail.com'],
+                [
+                    'name' => 'Dummy User',
+                    'password' => bcrypt('test@123'),
+                ]
+            );
 
-        $this->call([
-            DepartmentSeeder::class,
-        ]);
+            // Seed departments first
+            $this->call([DepartmentSeeder::class]);
+
+            // Seed employees using the dummy user
+            $this->call(EmployeeSeeder::class);
+
+            DB::commit();
+            Log::info('DatabaseSeeder executed successfully at ' . now());
+            $this->command->info("Database seeded successfully with dummy user: {$dummyUser->email}");
+
+        } catch (\Throwable $e) {
+            DB::rollBack();
+            Log::error('DatabaseSeeder failed: ' . $e->getMessage());
+            $this->command->error('Seeder failed: ' . $e->getMessage());
+        }
     }
 }

@@ -17,11 +17,11 @@ return new class extends Migration
                   ->constrained('employees')
                   ->onDelete('cascade');
             $table->string('address_line');
-            $table->string('city', 50);
-            $table->string('state', 60);
+            $table->string('city', 50)->index();
+            $table->string('state', 60)->index();
 
            // Keep as string to preserve leading zeros (e.g., "040001")
-            $table->string('pincode', 10)->comment('Postal or ZIP code');
+            $table->string('pincode', 10)->comment('Postal or ZIP code')->index();;
             
             $table->timestamps();
         });
@@ -32,6 +32,12 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('employee_addresses', function (Blueprint $table) {
+            $table->dropForeign(['employee_id']);
+            $table->dropIndex(['city']);
+            $table->dropIndex(['state']);
+            $table->dropIndex(['pincode']);
+        });
         Schema::dropIfExists('employee_addresses');
     }
 };
